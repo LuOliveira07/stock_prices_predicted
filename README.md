@@ -7,11 +7,17 @@ Este projeto é útil porque pode ser usado para prever o preço das ações. Is
 
 As ferramentas e APIs usadas neste projeto são:
 
-Pandas: é uma biblioteca Python para manipulação e análise de dados
-NumPy:  uma biblioteca Python para computação numérica
-Matplotlib: é uma biblioteca Python para visualização de dados
-Scikit-Learn: é uma biblioteca Python para aprendizado de máquina
+- Pandas: é uma biblioteca Python para manipulação e análise de dados
+
+- NumPy:  uma biblioteca Python para computação numérica
+
+- Matplotlib: é uma biblioteca Python para visualização de dados
+
+- Scikit-Learn: é uma biblioteca Python para aprendizado de máquina
+
 
 Fontes:
+
 https://www.kaggle.com/code/shaurov/website-classification-using-mnb/notebook
-github.com/asusnjar/algebra
+
+https://github.com/asusnjar/algebra
