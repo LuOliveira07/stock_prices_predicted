@@ -6,6 +6,7 @@ Este código primeiro carrega os dados de um arquivo CSV. Em seguida, divide os 
 Este projeto é útil porque pode ser usado para prever o preço das ações. Isso pode ser útil para investidores que desejam tomar decisões informadas sobre onde investir seu dinheiro, principalmente em operações nomeadas 
 
 As ferramentas e APIs usadas neste projeto são:
+
 Pandas: é uma biblioteca Python para manipulação e análise de dados
 NumPy:  uma biblioteca Python para computação numérica
 Matplotlib: é uma biblioteca Python para visualização de dados
