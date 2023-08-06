@@ -1,0 +1,30 @@
+# Python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+
+# Carregando os dados de preços de ações. O arquivo csv trata-se de um documento utilizando dados passados da NASDAQ, para teste.
+# Para obter dados reais da Bolsa de Valores brasileira (B3), utilize integração com a API do link abaixo:
+# https://www.b3.com.br/data/files/2B/41/CC/5D/10F42610D290A226790D8AA8/APIs-B3-Visao-Geral-versao-1.0.pdf
+df = pd.read_csv('stock_prices.csv')
+
+# Dividindo os dados em conjuntos de treinamento e teste
+X_train, X_test, y_train, y_test = train_test_split(df[['open', 'high', 'low', 'close']], df['close'], test_size=0.25)
+
+# Treinando o modelo
+model = LinearRegression()
+model.fit(X_train, y_train)
+
+# Fazendo previsões
+y_pred = model.predict(X_test)
+
+# Avaliando a acuracidade do modelo
+print(model.score(X_test, y_test))
+
+# Plotando as previsões de preços
+plt.plot(y_test, label='Actual')
+plt.plot(y_pred, label='Predicted')
+plt.legend()
+plt.show()
